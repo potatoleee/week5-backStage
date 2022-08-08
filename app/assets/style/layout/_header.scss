@@ -1,0 +1,42 @@
+.logo a{
+    background-image: url('../images/logo-ANSWER.svg');
+    background-repeat: no-repeat;
+    width: 151px;
+    height: 40px;
+    // 將文字推出h1
+    @include h1-hide;
+}
+
+nav{
+    width: 296px;
+    height: 800px;
+    position: relative;
+    .menu__assignment{
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: -32px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 32px;
+            background-color: $success;
+        }
+    }
+    
+    .avatar{
+        position: absolute;
+        bottom: 32px;
+        img{
+            width: 40px;
+            height: 40px;
+            
+        }
+    }
+}
+
+main{
+    width:76.875%;
+}

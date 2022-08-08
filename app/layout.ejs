@@ -11,20 +11,83 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
 <!-- google fonts -->
+<!-- google icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- google icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <header class="header">
-      header it me
-    </header>
+    <div class="container d-flex">
+      <nav class="py-5 ps-5 bg-light ">
+        <div class="logo mb-5">
+          <h1><a href="index.html">ANSWER</a></h1>
+        </div>
+        <ul>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">insert_chart</span>
+            <a class="fw-bold" href="#">Dashboard</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">forum</span>
+            <a class="fw-bold" href="#">Question</a>
+          </li>
+          <li class="d-flex mb-4 menu__assignment">
+            <span class="material-symbols-outlined me-3 text-success">assignment</span>
+            <a class="fw-bold text-success" href="#">Assignment</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">video_library</span>
+            <a class="fw-bold" href="#">Course</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">group</span>
+            <a class="fw-bold" href="#">Admin</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">settings</span>
+            <a class="fw-bold" href="#">Settings</a>
+          </li>
+        </ul>
 
-    <%- contents %>
+        <div class="avatar d-flex align-items-center ">
+          <img class="rounded-circle me-3" src="./assets/images/andychen.jpeg" alt="">
+          <div>
+            <p class="fw-bold">Andy Chen</p>
+            <p class="text-secondary">andy0401@mail.com</p>
+          </div>
+        </div>
 
-    <footer class="footer">
-      footer
-    </footer>
+
+      </nav>
+
+    <main class="p-5">
+      <header class="header d-flex justify-content-between align-items-center mb-5">
+        <div class="d-flex align-items-center">
+          <h2 class="fs-4 fw-bold"> Assigment</h2>
+          <p class=" allCourse fw-bold">All Course</p>
+          <span class="material-symbols-outlined text-success">
+              expand_more
+          </span>
+      </div>
+      <!-- 搜尋跟鈴鐺  start-->
+      <div>
+          <span class="material-symbols-outlined">
+              search
+          </span>
+          <span class="material-symbols-outlined ms-4">
+              notifications_active
+          </span>
+      </div>
+       <!-- 搜尋跟鈴鐺  end-->
+      </header>
+      <%- contents %>
+    </main>
+   
+
+
+  </div>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

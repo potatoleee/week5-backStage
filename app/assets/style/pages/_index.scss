@@ -1,0 +1,66 @@
+.allCourse{
+    margin-left: 50px;
+}
+.assignment{
+    gap: 0 16px;
+    &__list{
+        width:34.782608695%;
+        // width: 320px;
+    }
+    &__card{
+    width: 100%;
+    
+    li{
+        padding: 12px;
+        border-bottom: 1px solid $gray-400;
+        border-right: 1px solid $gray-400;
+        border-left: 1px solid $gray-400;
+        &:nth-child(1){
+            border: 1px solid $gray-400;
+        }
+
+    }
+    }
+
+    &__content{
+        width: 63.478260869%;
+    }
+    .content__title{
+        padding: 12px 16px;
+        border: 1px solid $gray-400;
+    }
+}
+.chat__list{
+    border-bottom:1px solid $gray-400;
+    border-right:1px solid $gray-400;
+    border-left:1px solid $gray-400;
+    padding-left:16px;
+    padding-top: 16px;
+    padding-right: 32px;
+    .chat__item{
+    
+        .chat__avator{
+            position: relative;
+            width:40px;
+            height:40px;
+            overflow:hidden;
+            border-radius:50%;
+            img{
+                width:100%;
+                height:auto;
+            }
+        }
+        .chat__text{
+            width: 91.38576779%;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $gray-400;
+            a{
+            width: 178px;
+            border:1px solid $gray-400;
+            padding-left: 12px;
+            padding-right: 16px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,33 @@
+.container{
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 0 16px;   
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+.material-symbols-outlined-grade {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+.text-highLight{
+  background-color: $gray-100;
+  padding: 2px;
+  font-family: 'Roboto Mono', monospace;
+  color:$success;
+}
+
+.text-indent-1{
+  text-indent: 1em;
+}
+
+
