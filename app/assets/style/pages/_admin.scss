@@ -1,0 +1,70 @@
+.seeAndEdit{
+    position: relative;
+
+    span{
+    &:hover{
+        color:$success;
+    }
+    &:nth-child(1){
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right:48px;
+        cursor: pointer;
+        
+
+    }
+    &:nth-child(2){
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right: 0;
+        cursor: pointer;
+    }
+    }
+}
+.admin__table{
+    th{
+        width: 100px;
+    }
+    td{
+       
+        &:nth-child(3){
+            width: 300px;
+        }
+        &:nth-child(5){
+            width: 100px;
+        }
+    }
+}
+
+.table > :not(caption) > * > *{
+    padding: 16px 0px;
+}
+.table{
+    margin-bottom: 67px;
+}
+.pagination{
+    right: 32px;
+}
+.page-link{
+    color:$dark;
+    border: 1px solid $success;
+}
+
+.modal__view{
+    padding: 32px;
+    &__avator{
+        background-image: url('../images/emir.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 141px;
+        height: 141px;
+        
+    }
+    &__content{
+        width: 61%;
+        margin-left: 24px;
+    }
+}

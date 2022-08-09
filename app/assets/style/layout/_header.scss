@@ -9,8 +9,8 @@
 
 nav{
     width: 296px;
-    height: 800px;
-    position: relative;
+    height: 100vh;
+    position: fixed;
     .menu__assignment{
         position: relative;
 
@@ -39,4 +39,5 @@ nav{
 
 main{
     width:76.875%;
+    margin-left: 296px;
 }
