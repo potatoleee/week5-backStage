@@ -12,12 +12,6 @@
     
     li{
         padding: 12px;
-        border-bottom: 1px solid $gray-400;
-        border-right: 1px solid $gray-400;
-        border-left: 1px solid $gray-400;
-        &:nth-child(1){
-            border: 1px solid $gray-400;
-        }
 
     }
     }
@@ -27,16 +21,14 @@
     }
     .content__title{
         padding: 12px 16px;
-        border: 1px solid $gray-400;
+       
     }
 }
 .chat__list{
-    border-bottom:1px solid $gray-400;
-    border-right:1px solid $gray-400;
-    border-left:1px solid $gray-400;
     padding-left:16px;
     padding-top: 16px;
     padding-right: 32px;
+    padding-bottom: 22px;
     .chat__item{
     
         .chat__avator{
@@ -52,8 +44,6 @@
         }
         .chat__text{
             width: 91.38576779%;
-            padding-bottom: 16px;
-            border-bottom: 1px solid $gray-400;
             a{
             width: 178px;
             border:1px solid $gray-400;
