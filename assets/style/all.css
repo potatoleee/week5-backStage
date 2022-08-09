@@ -2115,7 +2115,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #ced4da;
 }
 
 .table > :not(caption) > * > * {
@@ -6287,7 +6287,7 @@ fieldset:disabled .btn {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #ced4da;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -6325,7 +6325,7 @@ fieldset:disabled .btn {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #ced4da;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -7617,7 +7617,7 @@ fieldset:disabled .btn {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #ced4da !important;
 }
 
 .border-0 {
@@ -7625,7 +7625,7 @@ fieldset:disabled .btn {
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #ced4da !important;
 }
 
 .border-top-0 {
@@ -7633,7 +7633,7 @@ fieldset:disabled .btn {
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #ced4da !important;
 }
 
 .border-end-0 {
@@ -7641,7 +7641,7 @@ fieldset:disabled .btn {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #ced4da !important;
 }
 
 .border-bottom-0 {
@@ -7649,7 +7649,7 @@ fieldset:disabled .btn {
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #ced4da !important;
 }
 
 .border-start-0 {
@@ -12458,13 +12458,6 @@ main {
 
 .assignment__card li {
   padding: 12px;
-  border-bottom: 1px solid #ced4da;
-  border-right: 1px solid #ced4da;
-  border-left: 1px solid #ced4da;
-}
-
-.assignment__card li:nth-child(1) {
-  border: 1px solid #ced4da;
 }
 
 .assignment__content {
@@ -12473,16 +12466,13 @@ main {
 
 .assignment .content__title {
   padding: 12px 16px;
-  border: 1px solid #ced4da;
 }
 
 .chat__list {
-  border-bottom: 1px solid #ced4da;
-  border-right: 1px solid #ced4da;
-  border-left: 1px solid #ced4da;
   padding-left: 16px;
   padding-top: 16px;
   padding-right: 32px;
+  padding-bottom: 22px;
 }
 
 .chat__list .chat__item .chat__avator {
@@ -12500,8 +12490,6 @@ main {
 
 .chat__list .chat__item .chat__text {
   width: 91.38576779%;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ced4da;
 }
 
 .chat__list .chat__item .chat__text a {
