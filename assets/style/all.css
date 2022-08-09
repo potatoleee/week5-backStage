@@ -12468,6 +12468,10 @@ main {
   padding: 12px 16px;
 }
 
+.assignment__previous, .assignment__next {
+  line-height: 0;
+}
+
 .chat__list {
   padding-left: 16px;
   padding-top: 16px;
@@ -12497,6 +12501,16 @@ main {
   border: 1px solid #ced4da;
   padding-left: 12px;
   padding-right: 16px;
+}
+
+.list-group-item {
+  padding: 12px;
+}
+
+.list-group-item.active {
+  background-color: #f8f9fa;
+  color: #212529;
+  border-color: #ced4da;
 }
 
 /*# sourceMappingURL=all.css.map */
