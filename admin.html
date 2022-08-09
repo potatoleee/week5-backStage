@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin-ANSWER</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<!-- google fonts -->
+<!-- google icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- google icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="container d-flex">
+      <nav class="py-5 ps-5 bg-light ">
+        <div class="logo mb-5">
+          <h1><a href="index.html">ANSWER</a></h1>
+        </div>
+        <ul>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">insert_chart</span>
+            <a class="fw-bold" href="#">Dashboard</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">forum</span>
+            <a class="fw-bold" href="#">Question</a>
+          </li>
+          <li class="d-flex mb-4 menu__assignment">
+            <span class="material-symbols-outlined me-3 text-success">assignment</span>
+            <a class="fw-bold text-success" href="index.html">Assignment</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">video_library</span>
+            <a class="fw-bold" href="#">Course</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">group</span>
+            <a class="fw-bold" href="admin.html">Admin</a>
+          </li>
+          <li class="d-flex mb-4">
+            <span class="material-symbols-outlined me-3 ">settings</span>
+            <a class="fw-bold" href="#">Settings</a>
+          </li>
+        </ul>
+
+        <div class="avatar d-flex align-items-center ">
+          <img class="rounded-circle me-3" src="./assets/images/andychen.jpeg" alt="">
+          <div>
+            <p class="fw-bold">Andy Chen</p>
+            <p class="text-secondary">andy0401@mail.com</p>
+          </div>
+        </div>
+
+
+      </nav>
+
+    <main class="p-5 ">
+  
+      
+<!-- 頭部start -->
+<header class="header d-flex justify-content-between align-items-center mb-5">
+    <!-- 名稱start-->
+    <div class="d-flex align-items-center">
+        <h2 class="fs-4 fw-bold">Admin</h2>
+        <div class="d-flex ms-7 c-pointer" data-bs-toggle="modal" data-bs-target="#addModal">
+            <span class="material-symbols-outlined text-success me-2"> add </span>
+            <p class="fw-bold">Add New Admin</p>
+        </div>
+        <!-- add new admin modal start-->
+        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">add new admin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">1</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- add new admin modal end -->
+    </div>
+    <!-- 名稱 end-->
+    <!-- 搜尋跟鈴鐺  start-->
+    <div>
+        <span class="material-symbols-outlined"> search </span>
+        <span class="material-symbols-outlined ms-4"> notifications_active </span>
+    </div>
+    <!-- 搜尋跟鈴鐺  end-->
+</header>
+<!-- 頭部end -->
+<!-- 表格內容 -->
+<table class="table table-hover">
+    <thead>
+        <tr class="border-bottom border-dark">
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Verified</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 第1位 -->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#1</th>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+                <!-- 檢視 modal start -->
+                <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content modal__view flex-row ">
+                            <div class="modal__view__avator ">
+                                <!-- <img src="./assets/images/emir.jpeg" alt="emir"> -->
+                            </div>
+                            
+                            <div class="modal__view__content ">
+                                <ul>
+                                    <li class="d-flex justify-content-between mb-2">
+                                        <p>#1</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </li>
+                                    <li>Admin</li>
+                                    <li class="mb-2 fw-bold fs-4">Emir Wicks</li>
+                                    <li class="fs-14 text-secondary mb-3">emir.wicks@mail.com</li>
+                                    <li class="fs-14 d-flex justify-content-between ">
+                                        <div>Verified</div>
+                                        <div class="btn__arrow--down">1</div>
+                                    </li>
+                                </ul>
+                                
+
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 檢視 modal end-->
+                <!-- 編輯 modal start-->
+                <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    edit Modal title
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">1</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                    Save changes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 編輯 modal end-->
+            </td>
+        </tr>
+        <!-- 第1位end -->
+        <!-- 第2位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#2</th>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第2位 end-->
+        <!-- 第3位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#3</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第3位 end-->
+        <!-- 第4位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#4</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第4位 end-->
+        <!-- 第5位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#5</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第5位 end-->
+        <!-- 第6位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#6</th>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第6位 end-->
+        <!-- 第7位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#7</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第7位 end-->
+        <!-- 第8位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#8</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第8位 end-->
+        <!-- 第9位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#9</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第9位 end-->
+        <!-- 第10位 start-->
+        <tr class="admin__table border-bottom">
+            <th scope="row">#10</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="align-middle seeAndEdit">
+                <!-- 檢視按鈕 start-->
+                <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    visibility
+                </span>
+                <!-- 檢視按鈕 end-->
+                <!-- 編輯按鈕 start-->
+                <span class="material-symbols-outlined ms-4" data-bs-toggle="modal" data-bs-target="#editModal">
+                    edit
+                </span>
+                <!-- 編輯按鈕 end-->
+            </td>
+        </tr>
+        <!-- 第10位 end-->
+    </tbody>
+</table>
+<!-- 頁籤start -->
+<!-- <div aria-label="Page navigation example"> -->
+
+<ul class="pagination justify-content-end">
+    <li class="page-item">
+        <a class="page-link lh-0 px-1" href="#" aria-label="Next">
+            <span class="material-symbols-outlined">
+                navigate_before
+            </span>
+        </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+        <a class="page-link lh-0 px-1" href="#" aria-label="Next">
+            <span class="material-symbols-outlined">
+                navigate_next
+            </span>
+        </a>
+    </li>
+</ul>
+
+<!-- </div> -->
+<!-- 頁籤end -->
+    </main>
+   
+
+
+  </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
