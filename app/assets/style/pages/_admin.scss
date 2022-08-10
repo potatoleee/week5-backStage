@@ -1,7 +1,7 @@
 .seeAndEdit{
     position: relative;
 
-    span{
+    >span{
     &:hover{
         color:$success;
     }
@@ -59,8 +59,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 141px;
-        height: 141px;
+        width: 152px;
+        height: 152px;
         
     }
     &__content{
@@ -68,3 +68,38 @@
         margin-left: 24px;
     }
 }
+// 擴增按鈕
+.btn__expand{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    span{
+        transition: all .3s;
+    &.open{
+        transform: rotate(180deg);
+    }
+    }
+}
+.veriFied{
+    background-color: $light;
+    padding: 2px 8px;
+}
+.expand__content{
+    display: none;
+    margin-top: 32px;
+    transition: all .5s;
+    
+    // &.open{
+    //     display: block;
+    
+
+    // }
+}
+.btn{
+    padding:8px 32px;
+    border: 2px solid ;
+}
+
+
+
