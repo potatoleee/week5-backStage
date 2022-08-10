@@ -209,10 +209,11 @@
                                     <p class="text-secondary fs-12" >13:24 AM (1 hours ago)</p>
                                 </li>
                                 <li>
-                                    <span class="material-symbols-outlined">
+                                    <span class="material-symbols-outlined google__icon__grade c-pointer">
                                         grade
                                         </span>
-                                    <span class="material-symbols-outlined ms-4">
+                                            
+                                    <span class="material-symbols-outlined ms-4 c-pointer">
                                             edit
                                     </span>
                                 </li>
@@ -229,9 +230,9 @@
                             </p>
                         </div>
                     </li>
-                    <div id="editor">
-                       
-                    </div>
+                    <!-- 文字編輯框 creditor start -->
+                    <!-- <div id="editor"></div> -->
+                    <!-- 文字編輯框 creditor end -->
                 </ul>
                      </div>
                     <!-- 對話1 end -->
@@ -275,10 +276,10 @@
                                                         <p class="text-secondary fs-12" >13:24 AM (1 hours ago)</p>
                                                     </li>
                                                     <li>
-                                                        <span class="material-symbols-outlined">
+                                                        <span class="material-symbols-outlined c-pointer">
                                                             grade
                                                             </span>
-                                                        <span class="material-symbols-outlined ms-4">
+                                                        <span class="material-symbols-outlined ms-4 c-pointer">
                                                                 edit
                                                         </span>
                                                     </li>
@@ -340,10 +341,10 @@
                                             <p class="text-secondary fs-12" >13:24 AM (1 hours ago)</p>
                                         </li>
                                         <li>
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined google__icon__grade c-pointer">
                                                 grade
                                                 </span>
-                                            <span class="material-symbols-outlined ms-4">
+                                            <span class="material-symbols-outlined ms-4 c-pointer">
                                                     edit
                                             </span>
                                         </li>
@@ -405,10 +406,10 @@
                                             <p class="text-secondary fs-12" >13:24 AM (1 hours ago)</p>
                                         </li>
                                         <li>
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined c-pointer">
                                                 grade
                                                 </span>
-                                            <span class="material-symbols-outlined ms-4">
+                                            <span class="material-symbols-outlined ms-4 c-pointer">
                                                     edit
                                             </span>
                                         </li>
@@ -459,7 +460,10 @@
 
   </div>
     <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
+    <!-- 因推測bs5原始碼vendors.js 屬於 jQuery 的 slim（精簡） 版本 沒有全部功能像是slidetoggle沒有  -->
     <script src="./assets/js/vendors.js"></script>
+  <!-- 後放加上jQuery 可以保留 bootstrap5 元件的 js 又可以使用到 jQuery 更完整的功能 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 

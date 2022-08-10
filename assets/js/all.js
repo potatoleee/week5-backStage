@@ -3,8 +3,9 @@
 $(function () {
   $('.btn__expand ').on('click', function (e) {
     $('.btn__expand span ').toggleClass('open');
-    $('.expand__content').slideToggle('slow'); // $('.expand__content').toggleClass('open');
-  }); // 還沒點選時是淺灰色
+    $('.expand__content').slideToggle();
+  }); // select 預設淺灰 點擊後深黑色 start
+  // 還沒點選時是淺灰色
 
   var unSelected = "#6C757D"; // 被點選時是深灰色
 
@@ -19,9 +20,11 @@ $(function () {
     } else {
       $(this).css("color", selected);
     }
-  });
+  }); // select 預設淺灰 點擊後深黑色 end
+  // creditor 套件 start
+
   ClassicEditor.create(document.querySelector('#editor'))["catch"](function (error) {
     console.error(error);
-  });
+  }); // creditor 套件 end
 });
 //# sourceMappingURL=all.js.map

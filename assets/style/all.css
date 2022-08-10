@@ -12291,8 +12291,8 @@ fieldset:disabled .btn {
   font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;
 }
 
-.material-symbols-outlined-grade {
-  font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+.google__icon__grade {
+  font-variation-settings: "FILL" 0, "wght" 600;
 }
 
 .text-highLight {
@@ -12684,13 +12684,6 @@ main {
 .expand__content {
   display: none;
   margin-top: 32px;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-}
-
-.expand__content.open {
-  display: block;
 }
 
 .btn__verified {
