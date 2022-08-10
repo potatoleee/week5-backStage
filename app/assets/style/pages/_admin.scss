@@ -90,16 +90,21 @@
     margin-top: 32px;
     transition: all .5s;
     
-    // &.open{
-    //     display: block;
+    &.open{
+        display: block;
     
 
-    // }
+    }
 }
-.btn{
-    padding:8px 32px;
-    border: 2px solid ;
+.btn__verified{
+    color:$gray-400;
+    width: 100%;
+    
 }
+.btn__deactivate{
+    width: 100%;
+}
+
 
 
 
