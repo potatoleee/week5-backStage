@@ -88,13 +88,7 @@
 .expand__content{
     display: none;
     margin-top: 32px;
-    transition: all .5s;
     
-    &.open{
-        display: block;
-    
-
-    }
 }
 .btn__verified{
     color:$gray-400;
