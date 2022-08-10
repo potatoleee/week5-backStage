@@ -12444,6 +12444,28 @@ nav .avatar img {
   height: 40px;
 }
 
+.menu__current {
+  position: relative;
+  color: #198754;
+}
+
+.menu__current::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4px;
+  height: 32px;
+  background-color: #198754;
+}
+
+.menu-unCurrent {
+  color: #212529;
+}
+
 main {
   width: 76.875%;
   margin-left: 296px;
@@ -12470,6 +12492,10 @@ main {
   border-color: #212529;
   border-width: 2px;
   border-radius: 0.15em;
+}
+
+.modal__add .form-control {
+  border-color: #212529;
 }
 
 .btn {
