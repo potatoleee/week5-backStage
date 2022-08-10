@@ -3,6 +3,8 @@ title: Admin-ANSWER
 layout: ./app/layout.ejs
 engine: ejs
 current: index
+pageAssignment: menu__unCurrent
+pageAdmin: menu__current
 ---
 
 <!-- 頭部start -->
@@ -14,25 +16,116 @@ current: index
             <span class="material-symbols-outlined text-success me-2"> add </span>
             <p class="fw-bold">Add New Admin</p>
         </div>
-        <!-- add new admin modal start-->
-        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">add new admin</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">1</div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Close
-                        </button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- 新增 add new admin modal start-->
+        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content modal__add">
+                            <div class="modal-header">
+                                <h3 class="fs-4 fw-bold" id="exampleModalLabel">
+                                    New Admin
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- 編輯modal內容 start-->
+                            <div class="modal-body">
+                              
+                                <form >
+                                    <!-- 基本資料區  start-->
+                                    <div class="border-bottom mb-4">
+                                       
+                                        <p class="fs-5 fw-bold mb-3">Account</p>
+                                        <div class="mb-3">
+                                            <label for="disabledTextInput" class="form-label fs-14">Name</label>
+                                            <input type="text" id="disabledTextInput" class="form-control">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="disabledTextInput" class="form-label fs-14">Email</label>
+                                            <input type="email" id="disabledTextInput" class="form-control" >
+                                        </div>
+                                       
+                                     </div>
+                                     <!-- 基本資料區  end-->
+                                      <!--  認證區start-->
+                                      <div class="pb-4 border-bottom mb-4">
+                                        <p class="fs-5 fw-bold mb-3">Verification</p>
+                                        <div>
+                                         <ul class="d-flex justify-content-between  text-dark mb-3">
+                                            <li class="d-flex ">
+                                                <span class="material-symbols-outlined me-3 text-danger">
+                                                    warning
+                                                    </span>
+                                            <p class="fw-bold">Verified</p>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn btn-outline-light btn__verified border py-3 fw-bold text-success">Send Send Verification </button>
+                                        </div>
+
+                                      </div>
+                                     <!--  認證區end-->
+                                     <!--  訪問權限 Access level start-->
+                                     <div class="pb-4 border-bottom mb-4">
+                                        <p class="fs-5 fw-bold mb-3">Access level</p>
+                                        <select class="form-select " aria-label="Default select example"id="newAdminSelect">
+                                            <option selected class="text-dark">-Choose access level-</option>
+                                            <option value="1">Admin</option>
+                                            <option value="2">upper</option>
+                                            <option value="3">manger</option>
+                                        </select>
+                                     </div>
+                                     <!--  訪問權限 Access level end-->
+                                     <!-- 核取方塊區start -->
+                                     <div class="pb-4">
+                                        <p class="fs-5 fw-bold mb-3">Custom Access</p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Lecture
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Cupon
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Message
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Setting
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                             Task Menu
+                                            </label>
+                                          </div>
+                                     </div>
+                                     <!-- 核取方塊區end -->
+                                    
+                                </form>
+                            </div>
+                            <!-- 編輯modal內容end-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">
+                                    Cancel
+                                </button>
+                                <button type="button" class="btn btn-success">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- add new admin modal end -->
+        <!-- 新增 add new admin modal end -->
     </div>
     <!-- 名稱 end-->
     <!-- 搜尋跟鈴鐺  start-->

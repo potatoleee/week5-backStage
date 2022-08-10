@@ -36,6 +36,24 @@ nav{
         }
     }
 }
+// 顯示當前的畫面線條的class
+.menu__current{
+    position: relative;
+    color:$success;
+    &::before{
+        content: "";
+        position: absolute;
+        left: -32px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 32px;
+        background-color: $success;
+    }
+}
+.menu-unCurrent{
+    color:$dark;
+}
 
 main{
     width:76.875%;

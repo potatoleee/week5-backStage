@@ -24,28 +24,28 @@
         <div class="logo mb-5">
           <h1><a href="index.html">ANSWER</a></h1>
         </div>
-        <ul>
+        <ul class="menu">
           <li class="d-flex mb-4">
             <span class="material-symbols-outlined me-3 ">insert_chart</span>
             <a class="fw-bold" href="#">Dashboard</a>
           </li>
-          <li class="d-flex mb-4">
+          <li class="d-flex mb-4 ">
             <span class="material-symbols-outlined me-3 ">forum</span>
             <a class="fw-bold" href="#">Question</a>
           </li>
-          <li class="d-flex mb-4 menu__assignment">
-            <span class="material-symbols-outlined me-3 text-success">assignment</span>
-            <a class="fw-bold text-success" href="index.html">Assignment</a>
+          <li class="d-flex mb-4 <%- pageAssignment %>">
+            <span class="material-symbols-outlined me-3 ">assignment</span>
+            <a class="fw-bold " href="index.html">Assignment</a>
           </li>
-          <li class="d-flex mb-4">
+          <li class="d-flex mb-4 ">
             <span class="material-symbols-outlined me-3 ">video_library</span>
             <a class="fw-bold" href="#">Course</a>
           </li>
-          <li class="d-flex mb-4">
+          <li class="d-flex mb-4  <%- pageAdmin %>">
             <span class="material-symbols-outlined me-3 ">group</span>
             <a class="fw-bold" href="admin.html">Admin</a>
           </li>
-          <li class="d-flex mb-4">
+          <li class="d-flex mb-4 ">
             <span class="material-symbols-outlined me-3 ">settings</span>
             <a class="fw-bold" href="#">Settings</a>
           </li>
@@ -70,7 +70,7 @@
 
 
   </div>
-
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
