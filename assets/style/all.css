@@ -12526,11 +12526,11 @@ main {
   position: relative;
 }
 
-.seeAndEdit span:hover {
+.seeAndEdit > span:hover {
   color: #198754;
 }
 
-.seeAndEdit span:nth-child(1) {
+.seeAndEdit > span:nth-child(1) {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -12540,7 +12540,7 @@ main {
   cursor: pointer;
 }
 
-.seeAndEdit span:nth-child(2) {
+.seeAndEdit > span:nth-child(2) {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -12588,13 +12588,56 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 141px;
-  height: 141px;
+  width: 152px;
+  height: 152px;
 }
 
 .modal__view__content {
   width: 61%;
   margin-left: 24px;
+}
+
+.btn__expand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.btn__expand span {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn__expand span.open {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.veriFied {
+  background-color: #f8f9fa;
+  padding: 2px 8px;
+}
+
+.expand__content {
+  display: none;
+  margin-top: 32px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn {
+  padding: 8px 32px;
+  border: 2px solid;
 }
 
 /*# sourceMappingURL=all.css.map */
