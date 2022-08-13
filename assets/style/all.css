@@ -12314,6 +12314,35 @@ fieldset:disabled .btn {
   line-height: 0;
 }
 
+.ck.ck-editor {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -48px;
+}
+
+.ck.ck-editor__editable_inline {
+  height: 313px;
+}
+
+.ckEditor {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 30px;
+  display: none;
+}
+
+.ckEditor.open {
+  display: block;
+}
+
+.ckEditor__btn {
+  position: absolute;
+  bottom: -30px;
+  right: 24px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
