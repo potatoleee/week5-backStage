@@ -12558,6 +12558,7 @@ main {
 
 .assignment .content__title {
   padding: 12px 16px;
+  border-radius: 4px 4px 0 0;
 }
 
 .assignment__previous, .assignment__next {
@@ -12569,6 +12570,7 @@ main {
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 22px;
+  border-radius: 0 0 4px 4px;
 }
 
 .chat__list .chat__item .chat__avator {
