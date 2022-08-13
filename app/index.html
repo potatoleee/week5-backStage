@@ -110,7 +110,7 @@ pageAdmin: menu__unCurrent
             <!-- 列表區 end-->
             <!-- 對話區 start-->
 
-            <div class="assignment__content ">
+            <div class="assignment__content position-relative">
               <div class="tab-content" id="nav-tabContent">
                     <!-- 對話1 start -->
                     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
@@ -374,6 +374,17 @@ pageAdmin: menu__unCurrent
                         </ul>
                     </div>
                     <!-- 對話4 end -->
+                    <!-- ckeditor -->
+                    <div class="ckEditor">
+                         <div id="editor">
+                        </div>
+                        <div class="ckEditor__btn">
+                        <button class="btn btn-outline-success me-2" id="ckEditor__close">Cancel</button>
+                        <button class="btn btn-success ">Reply</button>
+                        </div>
+                        
+                    </div>
+                     <!-- ckeditor -->
               </div>
 
               <!-- 下一頁跟按鈕區  start-->
@@ -389,7 +400,7 @@ pageAdmin: menu__unCurrent
                     </li>
                     <li class="d-flex">
                         <button type="button" class="btn btn-outline-success px-5 me-3">Mark as read</button>
-                        <button type="button" class="btn btn-success px-5">Reply</button>
+                        <button type="button" class="btn btn-success px-5" id="ckEditor__reply">Reply</button>
                     </li>
              </ul>
               <!-- 下一頁跟按鈕區 end-->

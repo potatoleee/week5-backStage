@@ -36,4 +36,30 @@
   line-height: 0;
 }
 
+.ck.ck-editor{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -48px;
+}
+.ck.ck-editor__editable_inline{
+  height: 313px;
+}
+
+.ckEditor{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 30px;
+  display: none;
+  &.open{
+    display: block;
+  }
+
+  &__btn{
+    position: absolute;
+    bottom: -30px;
+    right: 24px;
+  }
+}
 

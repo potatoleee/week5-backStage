@@ -3,9 +3,17 @@ $(function() {
   $('.btn__expand ').on('click',function(e){
     $('.btn__expand span ').toggleClass('open');
     $('.expand__content').slideToggle();
+  })
   
+  $('#ckEditor__reply').on('click',function(){
+    $('.ckEditor').addClass('open');
+  })
+
+  $('#ckEditor__close').on('click',function(){
+    $('.ckEditor').removeClass('open');
 
   })
+  
   // select 預設淺灰 點擊後深黑色 start
 // 還沒點選時是淺灰色
   var unSelected = "#6C757D";
