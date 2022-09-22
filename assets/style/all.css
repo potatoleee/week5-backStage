@@ -12584,6 +12584,8 @@ main {
 .chat__list .chat__item .chat__avator img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .chat__list .chat__item .chat__text {
